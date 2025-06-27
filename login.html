@@ -58,7 +58,9 @@
       font-weight: bold;
       color: #c9d1d9;
     }
-    input {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
       width: 100%;
       padding: 12px;
       margin-bottom: 20px;
@@ -92,6 +94,12 @@
     }
     .forgot a:hover {
       text-decoration: underline;
+    }
+    /* Checkbox label styling */
+    .checkbox-label {
+      font-weight: normal;
+      color: #c9d1d9;
+      user-select: none;
     }
     footer {
       text-align: center;
@@ -159,6 +167,13 @@
 
         <label for="register-password-confirm">Confirm Password</label>
         <input type="password" id="register-password-confirm" name="register-password-confirm" placeholder="Confirm your password" required />
+
+        <div style="margin-bottom: 20px;">
+          <input type="checkbox" id="marketing-consent" name="marketing-consent" />
+          <label for="marketing-consent" class="checkbox-label">
+            I agree to receive marketing and promotional emails.
+          </label>
+        </div>
 
         <button type="submit">Register</button>
       </form>
