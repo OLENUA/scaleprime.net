@@ -38,6 +38,30 @@
       font-weight: bold;
     }
 
+    /* Notification banner */
+    #notification {
+      background-color: #238636;
+      color: white;
+      padding: 15px 40px 15px 20px;
+      position: relative;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    #notification button.close-btn {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      line-height: 1;
+    }
+
     .hero {
       text-align: center;
       padding: 100px 20px;
@@ -106,17 +130,22 @@
   </style>
 </head>
 <body>
-<header>
-  <h1>ScalePrime</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="login.html">Login</a>
-  </nav>
-</header>
 
+  <header>
+    <h1>ScalePrime</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div id="notification">
+    This site is still under development. Some features may be unavailable.
+    <button class="close-btn" aria-label="Close notification">&times;</button>
+  </div>
 
   <section class="hero">
     <h2>Scale Smarter, Not Harder</h2>
@@ -148,5 +177,14 @@
       <a href="terms.html">Terms of Service</a>
     </div>
   </footer>
+
+  <script>
+    // Закриття банера
+    document.querySelector('#notification .close-btn').addEventListener('click', function() {
+      const banner = document.getElementById('notification');
+      banner.style.display = 'none';
+    });
+  </script>
+
 </body>
 </html>
