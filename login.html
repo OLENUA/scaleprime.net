@@ -11,9 +11,25 @@
       background-color: #0e1117;
       color: #f5f5f5;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #161b22;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      height: 100vh;
+    }
+    header h1 {
+      color: #58a6ff;
+      margin: 0;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
     }
     .login-container {
       background-color: #161b22;
@@ -21,6 +37,9 @@
       border-radius: 12px;
       width: 320px;
       box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      margin: auto;
+      margin-top: 60px;
+      flex-grow: 1;
     }
     h2 {
       color: #58a6ff;
@@ -68,9 +87,37 @@
     .forgot a:hover {
       text-decoration: underline;
     }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0e1117;
+      color: #777;
+      font-size: 14px;
+      margin-top: auto;
+    }
+    footer a {
+      display: inline-block;
+      margin: 5px 10px;
+      padding: 8px 16px;
+      background-color: #30363d;
+      color: #c9d1d9;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>ScalePrime</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
   <div class="login-container">
     <h2>Login to ScalePrime</h2>
     <form>
@@ -87,5 +134,13 @@
       </div>
     </form>
   </div>
+
+  <footer>
+    <div>© 2025 ScalePrime Inc. All rights reserved.</div>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </footer>
 </body>
 </html>
