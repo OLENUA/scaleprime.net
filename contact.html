@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | ScalePrime</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e1117;
+      color: #f5f5f5;
+      padding: 40px;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #161b22;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: #58a6ff;
+      margin: 0;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 600px;
+      margin: 60px auto 0;
+      background-color: #161b22;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #c9d1d9;
+    }
+    input, textarea {
+      width: 100%;
+      margin-top: 6px;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+      background-color: #0e1117;
+      color: #f5f5f5;
+      resize: vertical;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #238636;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2ea043;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0e1117;
+      color: #777;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+    footer a {
+      display: inline-block;
+      margin: 5px 10px;
+      padding: 8px 16px;
+      background-color: #30363d;
+      color: #c9d1d9;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ScalePrime</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>If you have questions, partnership inquiries, or need support, please fill out the form below or email us directly at <a href="mailto:support@scaleprime.com" style="color:#58a6ff;">support@scaleprime.com</a>.</p>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    <div>© 2025 ScalePrime Inc. All rights reserved.</div>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </footer>
+</body>
+</html>
